@@ -203,7 +203,6 @@
                               #  Example:
                                 # a = 10    # Binary: 1010
                                 # result = ~a  # Result: -11 (Binary: 0101, considering 2's complement representation)
-
     
         
 
@@ -233,7 +232,7 @@
                     #   3. HexaDecimal -> Integer:   int('64' ,16) => 100
                     #   4. Binary -> Integer:   int('10000' ,2) => 16
 
-           # iii. Note:
+           # Note:
            #       i. Always use () where multiple operations are there.
            #      ii. Always do calculation of numbers of same types like int with int, float with float, etc.
            #     iii. If we return multiple numbers or anything together, they come together in tuple format.
@@ -243,3 +242,102 @@
                             #  print('Rohit') => Rohit => Displays the textual representation of an object on the console.
 
           
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Random modules: import random
+        # i.  random.random(): Generate random values from 0 to 1 range
+        # ii. random.randint(start , last): Generate random values within a given range.
+        # iii.random.choice([1,2,3,4,5]): Generate random values from the list of elemnts.
+        # iv. random.shuffle([1,2,3,4,5]): Shuffles elements inside the list.
+
+# Decimal and Fraction module: 
+        # i. from decimal import Decimal
+        #    Decimal('123.56)
+        # ii. from fractions import Fraction
+        #     Fraction(2,7)
+        
+        # Note: In python it is difficult to handle the decimals, so we use decimal module.
+
+
+# Sets:  
+#   A set is a collection which is unordered, unchangeable*, and unindex
+        # i. Syntax: setone = {1,2,3,4,5}
+        # ii. set Intersection:  setone & {1,3} => {1,3}
+        # iii.set union: setone | {1,3,5} = >{1,2,3,4,5}
+        # iv. set differences: setone - {1,2,3} => {4}
+        #  v. Empty set: set()
+
+        # Note: Empty {} are dictionary by default.
+
+
+# Boolean:
+#      i.  True: 1
+#      ii. False: 0 
+
+
+
+
+# Strings:
+#  Can be written using '', "", """ """.
+#        i. Syntax:  name = "Rohit"
+#       ii. Indexing: 0 to n-1, -1 to -n(backwards diraction)
+#      iii. Get index value: name[index] 
+#       iv. Slicing:  name[start : end : Indexjump] => start to end-1 elements are inclusive here, by hoping values according to the hoping number .
+#        v. lowerCase: name.lower()
+#       vi. Uppercase: name.upper()
+#      vii. Remove extra spaces:  name.strip()
+#     viii. Replace substring: name.replace(substring, newsubstring)
+#       ix. String to List: 
+#                     sentence = "Rohit is a good boy"
+#                     print(sentence.split(" ")) => ['Rohit', 'is', 'a', 'good', 'boy'] => splitiing done based on spaces.
+#        x. Find substring: 
+#                         name.find(substring/character) // If not found returns -1.
+#                         substaring in  name: => This just returns a boolean value after check
+#       xi. Get count of substring/character:   name.count(substring/character)
+#      xii. Placeholders: 
+#                      name = "My name is {} and my age is {}"
+#                      name.format('Rohit','23')
+#     xiii. length of string: len(name)
+#      xiv. List to string: 
+#                         L1 = ['rohit','is','good']
+#                         " ".join(l1) => rohit is good => joining of elements inside List are done with the specified character in "".
+#       xv.  Printing characters in String: 
+#                      for ch in name:
+#                           print(ch)
+#      xvi. To handle "" or / inside a string we use raw strings:
+#                 Example: r"c:\user\pwd"
+
+
+
+# Note: 
+#      i. slicing:  selecting subsets of elemnet inside list/string/etc
+#     ii. dicing:  silcing done in multi dimension or nested levels. 
+
+
+
+# List / Array:
+#             i. Syntax: L1 = [1,2,3,4,5]
+#            ii. Indexing: Same as string
+#           iii. To get a particular element present at a index: L1[index]
+#            iv. Length: len(l1)
+#             v. Slicing and dicing: same as string
+#            vi. changing elements at a index: L1[index] = new value
+#           vii. Looping List elements:
+#                     for element in L1:
+#                         print(element, end) //end means change line 
+ 
