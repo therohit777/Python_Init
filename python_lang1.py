@@ -340,5 +340,173 @@
 #           vii. Looping List elements:
 #                     for element in L1:
 #                         print(element, end) //end means change line
- 
+#          viii. Add elements at end: L1.append(element)
+#            ix. Remove elements from end: L1.pop()
+#             x. remove elements by themselves: l1.remove(element)
+#            xi. Inserting elements at a position: L1.insert(position, new element)
+#           xii. Creating copy of memory: L1.copy() // same as L1[:]
+#          xiii. List comprehension:  [x**2 for x in range(10)] => [0,1,4,9,16,25,36,49,64,81] 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Dictionary
+          #    i. Syntax: student = { "name": "Rohit", "age": 50, "roll": 27 }
+          #   ii. consists of key-value pairs. 
+          #  iii. Get values: student[key] / student.get(key)
+          #   iv. changeing values:  student[key] = new value  
+          #    v. Iterate over dictionary :  
+          #                              i. for keys in  student:
+          #                                     print(student, student[keys]) 
+          #                             ii. for keys,values in  student.items():
+          #                                     print(keys, values) 
+          #   vi. Length of dictionary: len(student) 
+          # viii. Adding new elements: student[newkey] = new value
+          #   ix. Remove of elements/items:  student.pop(key)
+          #    x. Remove of items from end:  student.popitem()
+          #   xi. deleting the memory reference in dictionary: del student[key]
+          #  xii. Distionary comprehension:  {x:x**2  for x in range(10)} => {0:0 , 1:1 , 2:4 , 3:9 , 4:16 , 5:25 , 6:36 ,7:49, 8:64 , 9:81} 
+          # xiii. Remove all dictionary items: student.clear()
+          #  xiv. creating dictionary through keys:
+          #                         keys = ["Rohit","Rohan","sham"]
+          #                         default_value = 0
+          #                         dict.fromkeys(keys,default_value) => {"Rohit": 0,"Rohan":0,"sham":0}
+
+
+
+# Note: 
+#      i. 'in' keyword checks the availability of an element inside the data types.  
+#     ii. checking datatypes of element = type(variablename)
+
+
+# Tuples
+#    List is mutable but tuple is immutable.
+          #    i. Syntax: name = ("Rohit","Rohan","Romit")
+          #   ii. Indexing: 0-n-1, -1 to -n
+          #  iii. Getting values at a particular index: name[0] => "Rohit"
+          #   iv. Length: len(name)
+          #    v. Tuple/List concat: (1,2,3) + (4,5) => (1,2,3,4,5)
+          #   vi. To count number of a element present in tuple: name.count(element)
+          # viii. destructuring data: 
+          #                         name = ("Rohit","Rohan","Romit")  
+          #                         (name1, name2, name3) = name =>  name1 = "Rohit" | name2 = "Rohan" |name3 = "Romit" 
+          
+
+
+
+
+
+
+
+
+
+
+# Taking users input:
+#            i. String: input("Enter usersname: ")
+#           ii. Int: int(input("Enter users age: "))
+
+
+#  Conditional Statements:
+#     Syntax:
+        #    if(consdition):
+        #         statement
+        #    elif(condition):
+        #         statement
+        #    else:
+        #         statement
+
+
+# Tertiary operator:   min = a if a < b else b     // a is correct ans, b is a false value
+
+#  Switch Statements:
+#       Syntax:
+                # lang = input("What's the programming language you want to learn? ")
+                # match lang:
+                #     case "JavaScript":
+                #         print("You can become a web developer.")
+                #         break
+                #     case "Python":
+                #         print("You can become a Data Scientist")
+                #         break
+                #     case "Java":
+                #         print("You can become a mobile app developer")
+                #         break
+                #     case _:
+                #         print("The language doesn't matter, what matters is solving problems.")
+                #         break
+  
+
+# Note:
+#     i. How to exit a program in python:  'exit()'
+#    ii. Leap Year (concept): divisible by 400 or (divisible by 4 and not divisible by 100)
+
+
+
+
+# Loops in Python:
+        # L1 = [1,2,3,4,5]
+
+
+        # 1. For Loop:
+                # Syntax:
+                #     for i in range(0,len(L1)):
+                #         print(L1[i])
+        #    Note: range(start,end,rangejump) => inclusive start to end-1, with range jump
+
+
+        # 2. For Each loop:
+                # Syntax:
+                #      for element in L1:
+                #         print(element)
+
+
+        # 3. While Loop:
+                # Syntax: 
+                #        sum = 0
+                #        index = len(L1) - 1
+                #        while(index):
+                #            print(l1[index])
+                #            index-=1
+
+        # 4. Do while Loop:  Python does not have a inbuilt do while,
+        #                      but functionality can be acheive using while loop itself.
+
+
+                # Example:
+                        # secret_word = "python"
+                        # counter = 0
+
+                        # while True:
+                        # word = input("Enter the secret word: ").lower()
+                        # counter = counter + 1
+                        # if word == secret_word:
+                        #         break
+                        # if word != secret_word and counter > 7: 
+                        #         break
+
+
+#  Break and continue:
+        #  i. Break: Breaks the current statement and program execution moves to the other statement
+        # ii. Continue: Skips the current statement/ iteration and program execution moves to next iteration
+
+
+
+
  
