@@ -281,7 +281,7 @@
         # iii.set union: setone | {1,3,5} = >{1,2,3,4,5}
         # iv. set differences: setone - {1,2,3} => {4}
         #  v. Empty set: set()
-
+        # vi. Adding elements: setone.add(element)
         # Note: Empty {} are dictionary by default.
 
 
@@ -509,4 +509,148 @@
 
 
 
- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Time module:
+        # Example: Implement an exponential backoff stratergy 
+        #          that doubles the wait time between retries, 
+        #          starting from 1 second but stops after 5 retries
+        
+                # Code:
+                      # import time 
+               
+                      # wait_time = 1
+                      # max_retries = 5
+                      # attempts = 0
+
+                      # while attempts < max_retries:
+                              # print("Attempt",attempts+1,"-wait time",wait_time)
+                              # time.sleep(wait_time)       
+                              # attempts += 1
+                              # wait_time *= 2
+           
+
+
+# # Loop Internal working:
+#        i. Iteration tool: For,while,for each,comprehension etc
+#       ii.  Iteration Objects: Provides us the first values memory address initially. List,File,set,etc
+#      iii.  __next__/next() : until and unless __next__ is present, iteration tools calls iter() and iterates over iterable objects. 
+#                              Else if the range of loop gets over, the stop iteraion exception gets raised and loop terminates.
+#       iv. Example of itrating over list using iter() and __next__():
+                      # L1 = [1,2,3]
+                      # I = iter(L1)
+                      # I.__next__() => 1      
+                      # I.__next__() => 2
+                      # I.__next__() => 3
+
+
+
+# File handling in Python:
+#          i. Open File: f = open('note.py')  / iter(f) // f.__iter__() // It is a iterable object in case of file, but in case of List and others it is just file memory reference of data 
+#         ii. Reading line: f.readline()
+#        iii. Reading lines throught __next__(): On using f.__next__() we can read the file line by line and when all lines are covered it throws an StopIteration exception.
+#         iv. Example of iterating through File:
+                # for line in open('note.py'):
+                    # print(line)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Functions:
+#     A set of instructions which can be used again and again.
+        # syntax:
+        #      def add(a,b=5): => a and b are variables
+        #         return a+b  => return statement
+        #      add(3,2) => function call
+
+    # Note: here default value is given to b, as if no value is passed for b then this default value is used. 
+
+
+
+# Taking multiple values in one parameter of function:
+        # syntax:
+        #      def add(*args): => args taking all values as a tuple of all values
+        #         return sum(args) => sum() builtin function doing sum of args elements
+        #      add(1,2,3,4,5) 
+
+
+
+
+# Taking named parameters using **kwargs:
+        # syntax:
+        #      def add(*kwargs): => args taking all values as a tuple of all values
+        #         for key,value in kwargs.items():
+        #            print(f"{key}: {value}")
+        #         return sum(args)
+        #      add(num1=2,num2=5,num3=6)
+
+
+
+
+# Returning values through yield:
+#    Yield keeps the value of function and its state in memory.
+        # Syntax:
+        #       def even_generator(limit):
+        #            for i in range(0,limit,2):
+        #                yield i
+        #       even_generator(100)
+        
+        #       for i in even_generator(100):
+        #            print(i)
+
+
+
+# Lambda function: 
+#    A function with no name or defination, moreover it's a function just for one time usage generally.
+#    Example:
+#           add = lambda a,b: a+b
+#           add(2,3) // 5
+
+
+
+
+# Recursion:
+#     A function repeatedly calling itself. Basically we solve bigger problems here
+#     by solving the smaller problems of similar type.
+
+#     Example:
+#             def factorial(n):
+#                 if(n==1 || n==0):  // base case: Avoids infinite recursion calls, thereby protecting memory overflow
+#                     return 1
+#                 return n* fact(n-1) // Recursive function
+#             factorial(10)
